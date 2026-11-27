@@ -4,14 +4,17 @@
 
 # AxNox Craft
 
-**AxNox 시리즈 앱을 한 곳에서 설치하고, 실행하고, 최신으로 유지하는 Windows 앱**
+**AxNox 시리즈 앱을 한 곳에서 설치하고, 실행하고, 최신으로 유지하는 Windows · macOS 앱**
 
 [![최신 버전](https://img.shields.io/github/v/release/AxisNox42/axnox-releases?style=flat-square&label=%EC%B5%9C%EC%8B%A0&color=a0b4ff&labelColor=16161c)](https://github.com/AxisNox42/axnox-releases/releases/latest)
-[![Windows 10/11](https://img.shields.io/badge/Windows-10%20%2F%2011-a0b4ff?style=flat-square&labelColor=16161c&logo=windows&logoColor=white)](#설치)
+[![Windows 10/11](https://img.shields.io/badge/Windows-10%20%2F%2011-a0b4ff?style=flat-square&labelColor=16161c&logo=windows&logoColor=white)](#windows)
+[![macOS 11+](https://img.shields.io/badge/macOS-11%2B-a0b4ff?style=flat-square&labelColor=16161c&logo=apple&logoColor=white)](#macos)
 [![관리자 권한 불필요](https://img.shields.io/badge/%EA%B4%80%EB%A6%AC%EC%9E%90%20%EA%B6%8C%ED%95%9C-%ED%95%84%EC%9A%94%20%EC%97%86%EC%9D%8C-8fd9b0?style=flat-square&labelColor=16161c)](#설치)
 [![다운로드](https://img.shields.io/github/downloads/AxisNox42/axnox-releases/total?style=flat-square&label=%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C&color=a0b4ff&labelColor=16161c)](https://github.com/AxisNox42/axnox-releases/releases)
 
 ### [⬇ Craft 내려받기](https://github.com/AxisNox42/axnox-releases/releases/latest)
+
+<sub>Windows: <code>…_x64-setup.exe</code> · macOS: <code>…_universal.dmg</code> (Apple 칩 · Intel 모두)</sub>
 
 <br>
 
@@ -33,11 +36,13 @@ Craft 하나만 깔아 두면 나머지는 버튼 한 번입니다.
 | 🛡️ **변조 검사** | 받은 설치 파일의 SHA-256을 목록 값과 비교해서, 하나라도 다르면 설치하지 않습니다. |
 | ▶️ **실행 · 제거** | 설치된 앱은 Craft에서 바로 실행하고, 지울 수도 있습니다. 지워도 앱 설정·데이터는 남아요. |
 | ♻️ **Craft 자체 업데이트** | Craft도 목록에 있는 앱이라, 새 버전이 나오면 스스로 바꾸고 다시 켜집니다. |
-| 🗂️ **설치 위치 지정** | 새 앱을 깔 폴더를 고를 수 있고, 업데이트는 원래 설치된 곳에 덮어씁니다. |
+| 🗂️ **설치 위치 지정** | (Windows) 새 앱을 깔 폴더를 고를 수 있고, 업데이트는 원래 설치된 곳에 덮어씁니다. |
 
 <br>
 
 ## 설치
+
+### Windows
 
 1. **[Releases](https://github.com/AxisNox42/axnox-releases/releases/latest)** 에서 `AxNox.Craft_x.y.z_x64-setup.exe` 를 받습니다.
 2. 받은 파일을 실행합니다. 내 계정에만 설치되므로 **관리자 권한이 필요 없습니다.**
@@ -47,18 +52,31 @@ Craft 하나만 깔아 두면 나머지는 버튼 한 번입니다.
 > 설치 파일에 코드 서명이 없어서 처음 실행할 때 **"Windows의 PC 보호"** 창이 뜰 수 있습니다.
 > **추가 정보 → 실행** 을 누르면 설치가 계속됩니다.
 
+### macOS
+
+1. **[Releases](https://github.com/AxisNox42/axnox-releases/releases/latest)** 에서 `AxNox.Craft_x.y.z_universal.dmg` 를 받습니다. Apple 칩, Intel Mac 모두 됩니다 (macOS 11 이상).
+2. dmg를 열고 **AxNox Craft** 를 **응용 프로그램** 폴더로 끌어다 놓습니다.
+3. 응용 프로그램 폴더에서 Craft를 엽니다. Mac 앱은 `~/Applications` 에 설치되므로 암호를 묻지 않습니다.
+
+> [!IMPORTANT]
+> Apple 개발자 서명이 없어서 처음 열 때 **"확인할 수 없음"** 경고가 뜹니다.
+> **시스템 설정 → 개인정보 보호 및 보안** 맨 아래의 **그래도 열기** 를 누르면 됩니다. 한 번만 하면 되고, Craft가 설치하는 앱에는 이 경고가 뜨지 않습니다.
+>
+> dmg 안에서 바로 실행하면 Craft가 스스로 업데이트할 수 없으니 꼭 응용 프로그램 폴더로 옮겨 주세요.
+
 <br>
 
 ## Craft로 받을 수 있는 앱
 
-| | 앱 | 설명 |
-|:-:|---|---|
-| 📦 | **AxNox Craft** | AxNox 앱을 한곳에서 설치·업데이트 |
-| 🎵 | **AxNox Sounds** | 로컬 음악 플레이어와 재생목록 |
-| ✉️ | **AxNox Mail** | Gmail·네이버 메일을 한곳에서 |
-| ⏱️ | **AxNox Focus** | 게임 시간 제한과 집중 타이머 |
-| ✳️ | **AxNox Account Launcher** | Claude 계정을 골라서 바로 실행 |
+| | 앱 | 설명 | Windows | macOS |
+|:-:|---|---|:-:|:-:|
+| 📦 | **AxNox Craft** | AxNox 앱을 한곳에서 설치·업데이트 | ✅ | ✅ |
+| 🎵 | **AxNox Sounds** | 로컬 음악 플레이어와 재생목록 | ✅ | 준비 중 |
+| ✉️ | **AxNox Mail** | Gmail·네이버 메일을 한곳에서 | ✅ | 준비 중 |
+| ⏱️ | **AxNox Focus** | 게임 시간 제한과 집중 타이머 | ✅ | 준비 중 |
+| ✳️ | **AxNox Account Launcher** | Claude 계정을 골라서 바로 실행 | ✅ | 준비 중 |
 
+Mac 버전이 아직 없는 앱은 Craft에서 **Mac 버전 준비 중** 으로 보이고, 나오는 대로 바로 설치할 수 있게 됩니다.
 새 앱이 나오면 Craft 목록에 자동으로 나타납니다. 따로 Craft를 업데이트할 필요도 없어요.
 
 <br>
@@ -119,10 +137,11 @@ flowchart LR
 | 저장소 | 들어 있는 것 |
 |---|---|
 | **[axnox-releases](https://github.com/AxisNox42/axnox-releases)** (여기) | Craft 설치 파일, 앱 목록 `catalog.json` |
+| **[axnox-craft](https://github.com/AxisNox42/axnox-craft)** | Craft 소스 코드 (Mac 빌드는 여기 GitHub Actions에서) |
 | **[axnox-apps](https://github.com/AxisNox42/axnox-apps)** | Sounds · Mail · Focus · Account Launcher 등 다른 앱 설치 파일 |
 
 <br>
 
 <div align="center">
-<sub>AxNox Series · Windows 10/11 x64</sub>
+<sub>AxNox Series · Windows 10/11 x64 · macOS 11+</sub>
 </div>
