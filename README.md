@@ -67,10 +67,9 @@ Craft 하나만 깔아 두면 나머지는 버튼 한 번입니다.
 
 ```mermaid
 flowchart LR
-    A["📄 catalog.json<br><sub>axnox-releases</sub>"] -->|앱 목록 · 최신 버전| C(("AxNox<br>Craft"))
-    C -->|설치 파일 내려받기| B["📦 설치 파일<br><sub>axnox-apps Releases</sub>"]
-    C -->|SHA-256 확인 후<br>조용히 설치| P["💻 내 PC"]
-    P -.->|설치된 버전<br>Windows 앱 목록| C
+    A["📄 앱 목록<br>catalog.json"] -- 최신 버전 --> C(("AxNox<br>Craft"))
+    B["📦 설치 파일<br>axnox-apps"] -- 내려받기 --> C
+    C -- "SHA-256 확인 → 설치" --> P["💻 내 PC"]
 ```
 
 - **앱 목록**은 이 저장소의 [`catalog.json`](catalog.json) 하나입니다. 앱 이름·설명·최신 버전·설치 파일 주소·SHA-256이 들어 있습니다.
